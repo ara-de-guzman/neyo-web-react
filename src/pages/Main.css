@@ -37,7 +37,7 @@
 }
 
 .about-me {
-  background: url("../images/bggrey.jpg");
+  background: url("../images/bggrey.jpg") no-repeat center / cover;
   display: flex;
   justify-content: space-between;
   padding: 5rem;
@@ -230,7 +230,7 @@ form textarea {
 .home-page,
 .work-page,
 .contact-page {
-  animation: slideFromLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: slideFromLeft 1.2s ease;
 }
 
 @keyframes slideFromLeft {

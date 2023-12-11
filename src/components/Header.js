@@ -12,6 +12,9 @@ function Header() {
       </div>
       <SocialMedia />
       <div className="nav">
+      <Link to="/" >
+          <span>Home</span>
+        </Link>
         <Link to="/work">
           <span>My Work</span>
         </Link>

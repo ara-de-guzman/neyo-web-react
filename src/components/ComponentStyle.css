@@ -1,0 +1,159 @@
+/* header component */
+.header-component {
+  height: 15vh;
+  background: url("../images/bggrey.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.logo p {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.nav span {
+  margin-right: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav span::after {
+  content: "";
+  width: 2px;
+  height: 35px;
+  bottom: -10px;
+  margin-left: 10px;
+  background-color: var(--darkgreen-color);
+  position: absolute;
+}
+
+/* Button Style */
+
+.regular-btn,
+.outline-btn,
+.underline-btn {
+  padding: 1rem 2rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link-regular-btn {
+  color: var(--light-color);
+}
+
+.link-outline-btn {
+  color: var(--darkgreen-color);
+}
+
+.regular-btn {
+  border: 0;
+  color: var(--light-color);
+  background-color: var(--darkgreen-color);
+}
+
+.regular-btn:hover {
+  background-color: #5c5c5a;
+}
+
+.white-regular-btn {
+  color: var(--darkgreen-color);
+  background-color: var(--light-color);
+}
+
+.outline-btn {
+  border: 1px solid var(--darkgreen-color);
+  background-color: transparent;
+}
+
+.underline-btn {
+  background: none;
+  color: var(--darkgreen-color);
+  border: 0;
+  border-bottom: 1px solid var(--darkgreen-color);
+}
+
+.underline-btn:hover {
+  color: #fffffa;
+}
+
+/* footer-component */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+  height: 30vh;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.footer-icon {
+  margin: 0px 10px;
+}
+.address p {
+  margin: 10px 0;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.subscribe input {
+  padding: 1rem 3rem;
+}
+.subscribe label {
+  margin-bottom: 10px;
+}
+
+.affiliate {
+  line-height: 2rem;
+}
+
+/* 1200px or less */
+@media (max-width: 1200px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .affiliate p {
+    display: inline;
+    margin: 0 20px;
+  }
+  .affiliate h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-component {
+    flex-direction: column;
+    height: 20vh;
+    padding: 20px 0;
+  }
+  .nav span {
+ 
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+  }
+  
+  .nav span::after {
+    height: 30px;
+    
+  }
+ 
+}
